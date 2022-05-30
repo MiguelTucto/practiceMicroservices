@@ -3,6 +3,7 @@ package pe.edu.upc.entities;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Data
@@ -33,7 +34,7 @@ public class Cliente {
 
     @Column(name= "create_at")
     @Temporal(TemporalType.TIMESTAMP)
-    private String createAt;
+    private Date createAt;
 
     @Column(length = 1, nullable = false)
     private String status;
